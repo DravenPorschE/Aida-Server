@@ -2,4 +2,4 @@ Flask
 requests
 openai-whisper
 sumy
-ffmpeg-python
+ffmpeg
