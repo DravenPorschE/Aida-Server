@@ -1,5 +1,5 @@
-Flask
-torch
-openai-whisper
-sumy
-requests
+Flask>=2.3.2
+requests>=2.31.0
+whisper>=20230314
+sumy>=0.9.0
+ffmpeg-python>=0.2.2
