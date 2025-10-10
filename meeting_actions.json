@@ -1,0 +1,48 @@
+{
+  "alarm_action": [
+    {
+      "action": "set_alarm",
+      "data": {
+        "hour": 1,
+        "minute": "0",
+        "ampm": "R"
+      }
+    }
+  ],
+  "calendar_action": [
+    {
+      "action": "create_calendar_event",
+      "data": {
+        "year": 2025,
+        "month": "October",
+        "day": 15,
+        "title": "Investor Presentation"
+      }
+    },
+    {
+      "action": "create_calendar_event",
+      "data": {
+        "year": 2025,
+        "month": "October",
+        "day": 14,
+        "title": "Follow-up Meeting to Review New System Features"
+      }
+    }
+  ],
+  "note_action": [
+    {
+      "action": "create_note",
+      "data": {
+        "title": "Database Migration Downtime",
+        "content": "Database migration costs minor downtime over the weekend."
+      }
+    },
+    {
+      "action": "create_note",
+      "data": {
+        "title": "AI Module Accuracy Improvement",
+        "content": "AI module's accuracy improved by 12% after the last update."
+      }
+    }
+  ]
+}

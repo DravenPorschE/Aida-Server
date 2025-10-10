@@ -1,0 +1,512 @@
+{
+  "intents": [
+    {
+      "tag": "search_online",
+      "patterns": [
+        "what is",
+        "who is",
+        "when is",
+        "where is",
+        "do a search",
+        "find information about",
+        "search online",
+        "look up",
+        "find details on",
+        "can you search for",
+        "google",
+        "look this up"
+      ],
+      "action": "search_online"
+    },
+    {
+      "tag": "close_search",
+      "patterns": [
+        "close search",
+        "close search results",
+        "exit search",
+        "exit search results",
+        "hide search",
+        "hide search results",
+        "stop searching",
+        "back out of search",
+        "leave search",
+        "turn off search",
+        "close my search",
+        "end search"
+      ],
+      "action": "close_search"
+    },
+    {
+      "tag": "start_live_meeting",
+      "patterns": [
+        "Can you start meeting",
+        "Can you begin transcription",
+        "Can you start listening",
+        "Can you enable live mode",
+        "Can you start transcribing",
+        "Can you turn on transcription",
+        "Can you start live session",
+        "Can you activate meeting mode",
+        "Can you begin recording",
+        "Can you please start the live meeting"
+      ],
+      "action": "start_live_meeting"
+    },
+    {
+      "tag": "stop_live_meeting",
+      "patterns": [
+        "Can you stop the live meeting",
+        "Can you stop listening",
+        "Can you stop transcribing",
+        "Can you turn of transcription",
+        "Can you stop live session",
+        "Can you deactivate meeting mode",
+        "Can you stop recording"
+      ],
+      "action": "stop_live_meeting"
+    },
+    {
+      "tag": "summarize_meeting",
+      "patterns": [
+        "Can you please summarize meeting",
+        "Can you please recap discussion",
+        "Show me the main points",
+        "Get the key takeaways",
+        "Can you show me action items",
+        "Can you please shoow me meeting highlights",
+        "Show give me a summary",
+        "What happened in the meeting",
+        "Show meeting notes",
+        "Can you please summarize today's meeting"
+      ],
+      "action": "summarize_meeting"
+    },
+    {
+      "tag": "open_notes",
+      "patterns": [
+        "open notes",
+        "show my notes",
+        "list notes",
+        "view notes",
+        "access notes",
+        "open the note app",
+        "open notebook",
+        "display notes",
+        "bring up my notes",
+        "can you open notes",
+        "check my notes",
+        "notes please",
+        "load notes"
+      ],
+      "action": "open_notes"
+    },
+    {
+      "tag": "create_note",
+      "patterns": [
+        "take a note",
+        "write this down",
+        "create new note",
+        "save this thought",
+        "add to my notebook",
+        "record as note",
+        "note this",
+        "make a note",
+        "note it down",
+        "create a new note",
+        "create a note",
+        "create note",
+        "make a new note",
+        "make note",
+        "start a note",
+        "can you write a note",
+        "jot this down",
+        "add note",
+        "new note please"
+      ],
+      "action": "create_note"
+    },
+    {
+      "tag": "delete_note",
+      "patterns": [
+        "delete note",
+        "remove note",
+        "erase note",
+        "clear note",
+        "get rid of note",
+        "delete my note",
+        "remove this note",
+        "delete the note",
+        "erase my note",
+        "trash this note",
+        "discard note",
+        "throw away note",
+        "wipe note",
+        "can you delete note",
+        "delete one of my notes",
+        "please delete note",
+        "delete a note titled",
+        "remove a note called",
+        "delete note named"
+      ],
+      "action": "delete_note"
+    },
+    {
+      "tag": "close_note",
+      "patterns": [
+        "close notes",
+        "close my notes",
+        "exit notes",
+        "exit my notes",
+        "quit note app",
+        "close note application",
+        "shut down notes",
+        "end notes",
+        "turn off notes",
+        "stop note app",
+        "close the note app",
+        "close the notes app",
+        "exit the notes app",
+        "leave notes",
+        "leave my notes",
+        "back out of notes",
+        "close notebook",
+        "finish notes"
+      ],
+      "action": "close_note"
+    },
+    {
+      "tag": "open_alarm",
+      "patterns": [
+        "Can you open the alarm app",
+        "I want you to open the alarm",
+        "Open alarm app",
+        "Open the alarm",
+        "Show me the alarm app",
+        "Show me my alarms",
+        "List my alarms",
+        "Display alarms",
+        "View my alarms",
+        "What alarms do I have",
+        "Check my alarms"
+      ],
+      "action": "open_alarm"
+    },
+    {
+      "tag": "set_alarm",
+      "patterns": [
+        "Can you set an alarm at",
+        "Can you start an alarm at",
+        "Can you please set a timer at",
+        "Start a timer at",
+        "Start an alarm at",
+        "Setup an alarm at",
+        "Create an alarm",
+        "Set an alarm",
+        "Set alarm",
+        "Make an alarm"
+      ],
+      "action": "set_alarm"
+    },
+    {
+      "tag": "close_alarm",
+      "patterns": [
+        "Can you close the alarm",
+        "Can you close the alarm application",
+        "Can you exit the alarm app"
+      ],
+      "action": "close_alarm"
+    },
+    {
+      "tag": "open_calendar_specific_month",
+      "patterns": [
+        "open calendar on january",
+        "open calendar on february",
+        "open calendar on march",
+        "open calendar on april",
+        "open calendar on may",
+        "open calendar on june",
+        "open calendar on july",
+        "open calendar on august",
+        "open calendar on september",
+        "open calendar on october",
+        "open calendar on november",
+        "open calendar on december",
+        "show calendar for january",
+        "show calendar for february",
+        "show calendar for march",
+        "show calendar for april",
+        "show calendar for may",
+        "show calendar for june",
+        "show calendar for july",
+        "show calendar for august",
+        "show calendar for september",
+        "show calendar for october",
+        "show calendar for november",
+        "show calendar for december",
+        "show the month of january",
+        "show the month of february",
+        "show the month of march",
+        "show the month of april",
+        "show the month of may",
+        "show the month of june",
+        "show the month of july",
+        "show the month of august",
+        "show the month of september",
+        "show the month of october",
+        "show the month of november",
+        "show the month of december",
+        "open the calendar at the month of",
+        "show the calendar at the month of",
+        "bring up the calendar at the month of"
+      ],
+      "action": "open_calendar_specific_month"
+    },
+    {
+      "tag": "open_calendar",
+      "patterns": [
+        "Can you please open the calendar",
+        "Can you please pull up the calendar",
+        "Can youy please show me the calendar",
+        "Open the calendar",
+        "Show me the calendar at",
+        "Bring up the calendar at",
+        "Can you please open the calendar",
+        "Open calendar app"
+      ],
+      "action": "open_calendar"
+    },
+    {
+      "tag": "close_calendar",
+      "patterns": [
+        "close calendar",
+        "close my calendar",
+        "exit calendar",
+        "exit the calendar",
+        "quit calendar",
+        "shut down calendar",
+        "stop calendar",
+        "turn off calendar",
+        "back out of calendar",
+        "leave calendar",
+        "end calendar",
+        "hide calendar",
+        "close the calendar app",
+        "exit calendar app",
+        "finish calendar"
+      ],
+      "action": "close_calendar"
+    },
+    {
+      "tag": "create_calendar_event",
+      "patterns": [
+        "Can you create a new calendar event on",
+        "Can you create an event on",
+        "Can you create an appointment on",
+        "Can you create an agenda on",
+        "Can you create a meeting on",
+        "Can you schedule a meeting on",
+        "Can you schedule an appointment on",
+        "Can you book an appointment on",
+        "Cam you setup a calendar event on",
+        "Can you put an event on",
+        "Can you add a calendar event on",
+        "Can you add an appointment on",
+        "Can you add a schedule on",
+        "Can you add a scheduled meeting on",
+        "Can you put a scheduled meeting on",
+        "Can you make a scheduled meeting on",
+        "Create calendar event on",
+        "Make calendar event on",
+        "Schedule a meeting on",
+        "Create event on",
+        "Make apppointment on",
+        "Schedule appointment on",
+        "Put an appointment on",
+        "Schedule event on",
+        "Appoint a schedule on",
+        "Make a schedule on",
+        "Create a new event",
+        "Make a new event",
+        "Put a new event"
+      ],
+      "action": "create_calendar_event"
+    },
+    {
+      "tag": "show_event_on_calendar",
+      "patterns": [
+        "Get me the events on",
+        "Show me the event on",
+        "What are my events on",
+        "What are the events on the month of",
+        "Show me the calendar events on",
+        "Can you tell me what event is on",
+        "Can you show me what event is scheduled",
+        "What is my schedule for",
+        "What agenda do I have for",
+        "Show my appointments on",
+        "List my meetings on",
+        "Get my calendar events"
+      ],
+      "action": "show_event_on_calendar"
+    },
+    {
+      "tag": "delete_calendar_event",
+      "patterns": [
+        "Can you delete the event on",
+        "Can you delete the event from",
+        "Can you delete my agenda on",
+        "Can you delete my agenda from",
+        "Can you delete my appointment on",
+        "Can you remove the event on",
+        "Can you remove the schedule from",
+        "Can you remove the agenda on",
+        "Can you remove my appointment on",
+        "Can you cancel the event on",
+        "Can you cancel the schedule on",
+        "Can you cancel my appointment on",
+        "Can you erase my event on",
+        "Can you erase my schedule on",
+        "Can you erase my agenda on",
+        "Can you erase my appointment on",
+        "Delete event on",
+        "Erase event on",
+        "Remove event on",
+        "Cancel event on"
+      ],
+      "action": "delete_calendar_event"
+    },
+    {
+      "tag": "introduce_yourself",
+      "patterns": [
+        "Introduce yourself",
+        "Tell me about yourself",
+        "Can you please tell us about you",
+        "Tell us about yourself"
+      ],
+      "action": "introduce_yourself"
+    },
+    {
+      "tag": "open_games",
+      "patterns": [
+        "Can we play a game",
+        "Can we please play a game",
+        "Let's play a game",
+        "Can we start a game",
+        "Can we please start a game",
+        "Let's start the game",
+        "Let's play",
+        "Let's play a game",
+        "I challenge you to a game"
+      ] 
+    },
+    {
+      "tag": "play_tic_tac_toe",
+      "patterns": [
+        "Let's play tic-tac-toe",
+        "Open tic-tac-toe",
+        "I challenge you to a game of tic-tac-toe",
+        "Can you please open up tic-tac-toe",
+        "How about a game of tic-tac-toe"
+      ]
+    },
+    {
+      "tag": "play_sudoku",
+      "patterns": [
+        "Let's play sudoku",
+        "Open sudoku",
+        "I challenge you to a game of sudoku",
+        "Can you please open up sudoku",
+        "How about a game of sudoku"
+      ]
+    },
+    {
+      "tag": "play_memory_game",
+      "patterns": [
+        "Let's play memory game",
+        "Open memory game",
+        "I challenge you to a game of memory game",
+        "Can you please open up memory game",
+        "How about a game of memory game"
+      ]
+    },
+    {
+      "tag": "play_random_game",
+      "patterns": [
+        "Let's play a random game",
+        "Open a random game",
+        "I challenge you to a random game",
+        "Can you please open up a random game",
+        "How about a random game"
+      ]
+    },
+    {
+      "tag": "open_configuration",
+      "patterns": [
+        "Open the configure app",
+        "I want to configure AIDA",
+        "I want to customize AIDA",
+        "I want to change AIDA",
+        "Show me the current configuration on AIDA",
+        "What are the configurations on AIDA"
+      ]
+    },
+    {
+      "tag": "yes",
+      "patterns": [
+        "Yes",
+        "Okay",
+        "I confirm",
+        "I approve",
+        "I accept",
+        "Sure"
+      ]
+    },
+    {
+      "tag": "no",
+      "patterns": [
+        "No",
+        "I dont want to",
+        "I dont agree",
+        "No i dont want that",
+        "I refuse",
+        "No dont",
+        "No its all good",
+        "No thank you"
+      ]
+    },
+    {
+      "tag": "create_email",
+      "patterns": [
+        "I want you to send an email",
+        "I want to send an email",
+        "Create an email",
+        "Make an email",
+        "Make me an email",
+        "Send an email"
+      ]
+    },
+    {
+      "tag": "open_email",
+      "patterns": [
+        "Open the email application",
+        "Open the email app",
+        "Open my emails",
+        "Open emails",
+        "I want to see my emails",
+        "Can i see my emails",
+        "Can you open my email",
+        "Can you open my email please",
+        "Show me email messages"
+      ]
+    },
+    {
+      "tag": "close_email",
+      "patterns": [
+        "Can you close my email",
+        "Close email application",
+        "Exit email application",
+        "Close email"
+      ]
+    }
+  ]
+}
