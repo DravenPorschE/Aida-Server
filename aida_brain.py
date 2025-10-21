@@ -299,7 +299,9 @@ def worker():
         if job_id is None:
             break
         with model_lock:
-            result = meeting_transcriptor_model.transcribe(file_path, language="en")
+            result = meeting_transcriptor_model.transcribe(file_path, language=None)
+        transcript = result["text"].strip()
+
         transcript = result["text"].strip()
         result_queue.put((job_id, transcript))
         task_queue.task_done()
