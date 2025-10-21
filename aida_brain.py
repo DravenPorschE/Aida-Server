@@ -15,6 +15,7 @@ from sumy.summarizers.lex_rank import LexRankSummarizer
 from sumy.nlp.stemmers import Stemmer
 from sumy.utils import get_stop_words
 import time
+import whisper.audio
 
 from datetime import datetime
 from datetime import date
@@ -298,11 +299,25 @@ def worker():
         job_id, file_path = task_queue.get()
         if job_id is None:
             break
+
+        # Measure transcription start time
+        start_time = time.time()
+
+        # Load audio to get duration
+        audio = whisper.audio.load_audio(file_path)
+        duration_seconds = len(audio) / whisper.audio.SAMPLE_RATE
+        print(f"🎵 Received audio '{file_path}' with duration: {duration_seconds:.2f} seconds")
+
         with model_lock:
             result = meeting_transcriptor_model.transcribe(file_path, language=None)
-        transcript = result["text"].strip()
 
         transcript = result["text"].strip()
+
+        # Measure transcription end time
+        end_time = time.time()
+        processing_time = end_time - start_time
+        print(f"⏱ Transcription completed in {processing_time:.2f} seconds")
+
         result_queue.put((job_id, transcript))
         task_queue.task_done()
 
