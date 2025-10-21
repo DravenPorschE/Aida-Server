@@ -29,7 +29,7 @@ from json.decoder import JSONDecodeError
 # Load Whisper Model
 # ----------------------------
 print("Loading Whisper model...")
-meeting_transcriptor_model = whisper.load_model("small")
+meeting_transcriptor_model = whisper.load_model("medium")
 model_lock = threading.Lock()
 print("Model loaded successfully.")
 
